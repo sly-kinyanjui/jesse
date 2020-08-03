@@ -30,4 +30,4 @@ A pizza ordering webpage application.
 >MIT LICENSE &copy; 2020 sylvia kinyanjui
 
 ## Collaborate:
-To contribute to Pizza pap!, reach me on `sylviakinyanjui22@gmail.com`.
+To contribute to wong shack!, reach me on `sylviakinyanjui22@gmail.com`.
