@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wong Shack</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Wicked css -->
+    <link rel="stylesheet" href="css/wickedcss.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!--Custom css file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!--Start Navigation //-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <h1 id="piz-pap" class="">Wo<span id="spantext">ng</span>shack!</h1>
+    <div class="navi">
+        <ul class="nav-items">
+            <li><a href="#menus">Menu</a></li>
+            <li><a href="#order">Orders</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </div>
+</nav>
+<!--End Navigation-->
+
+
+<!--Start Landing-->
+<div class="landing">
+    <div class="overlay">
+        <div id="push"></div>
+        <div class="landing-text">
+            <h1 class="text-white text-center"><span class="pizz">Pizza </span><span class="exc">Instant!</span></h1>
+            <h2 class="text-white text-center">Pata pizza Asap!</h2>
+        </div>
+        <div class="h-buttons text-center">
+            <a href="#welcome">
+                <button class="btn bg-info floater  infinite delay-2s">Go</button>
+            </a>
+            <div class="socials">
+                <a href=""><span class="fab fa-facebook icon_facebook"></span></a>
+                <a href=""><span class="fab fa-twitter icon_twitter"></span></a>
+                <a href=""><span class="fab fa-google-plus icon_googlep"></span></a>
+                <a href=""><span class="fab fa-linkedin icon_linkedin"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Landing-->
+
+<!--Welcome Section-->
+
+<div class="welcome" id="welcome">
+    <br><br><br><br>
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="https://thumbs.dreamstime.com/b/black-chef-cartoon-character-platter-baker-holding-silver-cloche-food-meal-plate-giving-thumbs-up-80310683.jpgm"alt="chef-cartoon" class="Wong's-img">
+            </div>
+            <div class="col-md-6 Wong's-txt">
+                <h1 class="text-center txt txt-big">Wong's<span class="pizz">Pizza </span><span class="exc">shack!</span>
+                </h1>
+                <p class="text-center txt">Incredibly tasty pizza</p>
+                <p class="text-center txt">You order,we deliver!</p>
+                <a href="#menus">
+                    <button class="btn bg-info mx-auto d-block menu-btn">Menu</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Start Content-->
+
+<div id="menus"></div>
+<br>
+<div class="menu col-md-12">
+    <div class="menu-overlay">
+        <h1 class="text-center text-white" id="menu">Menu</h1>
+        <div class="pizza-menu row text-center">
+            <figure class="col-sm-4">
+                <img src="https://www.paradisepizzas.com/wp-content/uploads/2019/04/TropicalChicken-Pan.png" alt="Regular pizza" class="wiggle">
+                <figcaption class="text-white">Regular<br>Ksh. 400</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Chicken-Pizza_exps30800_FM143298B03_11_8bC_RMS-696x696.jpg" alt="Medium pizza" class="wiggle">
+                <figcaption class="text-white">Medium<br>Ksh. 800</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="https://www.freeiconspng.com/uploads/pizza-png-13.png" alt="large-pizza" class="wiggle">
+                <figcaption class="text-white">Large<br>Ksh. 1500</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="orders" id="order">
+    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+            <form class="col-sm-6 offset-sm-3 text-center">
+                <label>Pick your pizza Flavour:</label>
+                <select class="custom-select custom-select-md mb-3 flavour" required>
+                    <option value="vegtikka">Veg Tikka</option>
+                    <option value="chickentikka">Chicken Tikka</option>
+                    <option value="periperi">Peri-Peri Chicken</option>
+                    <option value="bbq">BBQ Steak</option>
+                    <option value="boerewors">Boerewors</option>
+                    <option value="hawaiian">Hawaiian</option>
+                    <option value="mushroom">Chicken and Mushroom</option>
+                    <option value="regina">Regina Pizza</option>
+                </select>
+                <label>Chose your preferred Size:</label>
+                <select class="custom-select custom-select-md mb-3" id="size" required>
+                    <option value="regular">Regular</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="crust">Choose your favorite Crust:</label>
+                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                    <option value="thin">Thin Crust @ Ksh. 200</option>
+                    <option value="thick">Thick Crust @ Ksh. 250/option>
+                    <option value="flatbread">FlatBread Crust @ sh. 175</option>
+                    <option value="custom">Custom Crust @ sh. 300</option>
+                </select>
+                <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="tomato">Tomato @ sh. 70</option>
+                    <option value="onions">Onions @ sh. 70</option>
+                    <option value="mushroom">Mushroom @ sh. 70</option>
+                    <option value="greenpepper">Green Pepper @ sh. 70</option>
+                    <option value=""></option>
+                    <option value="olives">Olives @ sh. 130</option>
+                    <option value="pineapple">Pineapple @ sh. 140</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 140</option>
+                    <option value="macon">Macon @ sh. 130</option>
+                    <option value="mince">Mince @ sh. 130</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni @ sh. 160</option>
+                    <option value="chicken">Periperi Chicken @ sh. 200</option>
+                </select>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+
+
+            </form>
+            <a href="#summary">
+                <button type="submit" class="btn btn-success checkout" id="checkout">
+                    Checkout
+                </button>
+            </a>
+
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<div class="order-summary" id="sum-order">
+    <h1 class="text-center" id="summary">Order Summary</h1>
+    <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+    <ol id="list" class="text-center sum">
+    </ol>
+
+
+    <div class="cdata-overlay">
+        <div class="customerdata row">
+            <div class="col-sm-3"></div>
+            <form action="" class="form-group col-sm-6 data">
+                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+            </form>
+
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="d-block mx-auto text-center">
+        <button class='deliver'>Make Delivery</button>
+        <button class='delivernot'>Pick Up</button>
+    </div>
+</div>
+
+
+<div><a href="contact-me.html">Contact Me</a>
+</div> 
+
+  <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://github.us17.list-manage.com/subscribe/post?u=192e70743fb7b89147b64501b&amp;id=03b6475b7a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE2">Message  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MMERGE2" class="required" id="mce-MMERGE2">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_192e70743fb7b89147b64501b_03b6475b7a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/scrollify.js"></script>
+</html>
